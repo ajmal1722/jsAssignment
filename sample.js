@@ -52,3 +52,25 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
         console.log (sum);
     }
     sumEven (10);
+
+// 5. Checking given number is prime
+    function primeNumber (number) {
+        let flag = 0;
+        for (i = 2; i < number; i++){
+            if (number % i === 0){
+                flag = 1;
+                break;
+            }
+        }
+        if (flag === 0){
+            console.log (`${number} is a prime number`);
+        } else {
+            console.log (`${number} is not a prime number`);
+        }
+    }
+    primeNumber(7);
+
+// 6. Second largest number in an array
+    function secondLargest (array) {
+        
+    }
