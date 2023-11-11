@@ -84,3 +84,21 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
         console.log (`6: Second largest of an array is ${sortedArray[1]}`)
     }
     secondLargest([5,6,7,,1,8,5,36,2,4,49,4,5,15,92]);
+
+
+// 7. Remove duplicates of an array
+    function removeDuplicate (inputArray){
+        
+    }
+    removeDuplicate ([2,5,5,88,7]);
+
+
+// 8. Calculate  sum of elements in an array
+    function sumArray (inputArray) {
+        let sum = 0;
+        for (let i = 0; i < inputArray.length; i++){
+            sum += inputArray[i];
+        }
+        console.log (`8: sum = ${sum}`);
+    }
+    sumArray ([1, 2, 3, 4, 5]);
