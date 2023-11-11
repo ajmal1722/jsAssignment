@@ -61,7 +61,7 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 
 // 5. Checking given number is prime
-    function primeNumber (number) {
+    function primeNumberCheck (number) {
         let flag = 0;
         for (i = 2; i < number; i++){
             if (number % i === 0){
@@ -75,7 +75,7 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
             console.log (`5: ${number} is not a prime number`);
         }
     }
-    primeNumber(7);
+    primeNumberCheck(7);
 
 
 // 6. Second largest number in an array
@@ -102,3 +102,31 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
         console.log (`8: sum = ${sum}`);
     }
     sumArray ([1, 2, 3, 4, 5]);
+
+
+// 9. Generate prime numbers
+    function primeNumber (number){
+        
+    }
+    primeNumber (5);
+
+
+// 10. Maximum and minimum value
+    function maxAndMin (inputArray){
+    let max;
+    let min;
+    
+        const maxValue = inputArray.sort ((a , b) => b - a);
+        max = inputArray[0]; 
+   
+        const minValue = inputArray.sort ((a , b) => a - b);
+        min = inputArray[0];
+
+        console.log (`10: max = ${max} and min = ${min}`)
+    }
+
+    maxAndMin ([5,8,7,6,3,15,88,45,13]);
+
+
+//11. Factorial of given number
+    
