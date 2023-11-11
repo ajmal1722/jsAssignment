@@ -9,7 +9,7 @@
             if ( array[i] > max)
             max = array[i];
         }
-        console.log (`maximum element of an array is : ${max}`);
+        console.log (`1: maximum element of an array is : ${max}`);
     }
     maxElement([1,5,15,9,10,18,-20])
 // const myArray = [3, 8, 1, 6, 2, 5];
@@ -17,9 +17,14 @@
 
 
 // 2. Reverse of a string
-    function  reverseString(string){
-        
+    function  reversedString(inputString){
+        const splitString = inputString.split('');
+        const arrayReversed = splitString.reverse();
+        const arrayJoint = arrayReversed.join('')
+        console.log (`2: ${arrayJoint}`);
     }
+    reversedString ('Hello!');
+
 
 // 3. Array in ascending order
     function arrayAscending(array){
@@ -36,10 +41,11 @@
             }
             sortedArray.push(array[i])
         }
-        console.log(sortedArray);
+        console.log(`3: ${sortedArray}`);
     }
     
 arrayAscending([45,5,7,5,8,9,78,36,22,13]);
+
 
 // 4. Sum of all even numbers between 1 and n.
     function sumEven (n) {
@@ -49,9 +55,10 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
                 sum += i;
             }
         }
-        console.log (sum);
+        console.log (`4: ${sum}`);
     }
     sumEven (10);
+
 
 // 5. Checking given number is prime
     function primeNumber (number) {
@@ -63,12 +70,13 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
             }
         }
         if (flag === 0){
-            console.log (`${number} is a prime number`);
+            console.log (`5: ${number} is a prime number`);
         } else {
-            console.log (`${number} is not a prime number`);
+            console.log (`5: ${number} is not a prime number`);
         }
     }
     primeNumber(7);
+
 
 // 6. Second largest number in an array
     function secondLargest (array) {
