@@ -79,6 +79,8 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 
 // 6. Second largest number in an array
-    function secondLargest (array) {
-        
+    function secondLargest (inputArray) {
+        const sortedArray = inputArray.sort((a, b) => b - a);
+        console.log (`6: Second largest of an array is ${sortedArray[1]}`)
     }
+    secondLargest([5,6,7,,1,8,5,36,2,4,49,4,5,15,92]);
