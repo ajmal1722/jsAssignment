@@ -211,4 +211,14 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     sumEven (10);
 
 
-// 18. 
+// 18. Union of array of integers
+
+
+
+// 19. Sm of digits of a given number
+    // function sumOfDigits (number) {
+        
+    // }
+
+
+// 20.
