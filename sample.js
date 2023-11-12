@@ -175,3 +175,30 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
         console.log (`14: Fibonacci series are ${fib}`);
     }
     fibonacciSeries (10)
+
+
+// 15. Sum of prime numbers
+    // function primeNumberSum (number) {
+    //     for (let i = 1; i < number; i++){
+    //         if ()
+    //     }
+    // }
+
+
+// 16. Sum of all multiple of 5
+    function sumOfMultiple (number) {
+        let sum = 0;
+        for (let i = 3; i <= number; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+                sum += i;
+            }
+        }
+        console.log (`16: sum of all the multiple of 3 and 5 = ${sum}`);
+    }
+    sumOfMultiple (5);
+
+
+// 17.Sum of all the even number
+    function sumE () {
+
+    }
