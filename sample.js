@@ -155,4 +155,23 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     palindromeCheck ('madam');
     
 
-// 13. 
+// 13. Checking Armstrong number or not
+    // function checkArmstrong (number) {
+    //     const stringNumber = String (number).split('');
+    //     const digitsNumber = stringNumber.length;
+        
+    //     console.log (stringNumber)
+    // }
+    // checkArmstrong (153);
+
+
+// 14. Print Fibonacci series
+    function fibonacciSeries (number) {
+        let fib =[0, 1] ;
+        for (let i = 2; i < number; i++){
+            nextTerm = fib[i - 2] + fib[i - 1];
+            fib.push(nextTerm);
+        }
+        console.log (`14: Fibonacci series are ${fib}`);
+    }
+    fibonacciSeries (10)
