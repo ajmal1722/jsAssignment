@@ -199,6 +199,16 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 
 // 17.Sum of all the even number
-    function sumE () {
-
+    function sumEvenNumbers (n) {
+        let sum = 0;
+        for (let i = 1; i < n; i++){
+            if (i % 2 ===0){
+                sum += i;
+            }
+        }
+        console.log (`4: ${sum}`);
     }
+    sumEven (10);
+
+
+// 18. 
