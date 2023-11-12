@@ -128,5 +128,17 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     maxAndMin ([5,8,7,6,3,15,88,45,13]);
 
 
-//11. Factorial of given number
+// 11. Factorial of given number
+    function factorial (number) {
+        let sum = 1;
+        for (let i = 1; i <= number; i++){
+           sum = sum * i;
+        }
+        console.log (`11: factorial of ${number} = ${sum}`);
+    }
+    factorial (5)
+
+
+// 12. Checking a string it's palindrome or not
+    
     
