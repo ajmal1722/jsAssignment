@@ -88,9 +88,11 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 // 7. Remove duplicates of an array
     function removeDuplicate (inputArray){
-        
+        const uniqueSet = new Set(inputArray);
+        const uniqueArray = Array.from(uniqueSet);
+        console.log('7: ', uniqueArray)
     }
-    removeDuplicate ([2,5,5,88,7]);
+    removeDuplicate ([2,5,5,88,7,2,4]);
 
 
 // 8. Calculate  sum of elements in an array
