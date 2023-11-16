@@ -143,18 +143,19 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 // 12. Checking a string it's palindrome or not
     function palindromeCheck (inputString){
-        const stringReversed = inputString.split('').reverse().join('');
+        const stringlLowerCased = inputString.toLowerCase();
+        const stringReversed = stringlLowerCased.split('').reverse().join('');
 
-    if (inputString === stringReversed) {
+    if (stringlLowerCased === stringReversed) {
         console.log(`12: "${inputString}" is a palindrome`);
     } else {
-        console.log(`12: "${inputString}" is a not palindrome`);
+        console.log(`12: "${inputString}" is a not a palindrome`);
     }
 
     // console.log(stringReversed);
     // console.log(inputString);
     }
-    palindromeCheck ('madam');
+    palindromeCheck ('Madam');
     
 
 // 13. Checking Armstrong number or not
