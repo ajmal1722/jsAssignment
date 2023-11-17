@@ -48,7 +48,12 @@ const hoverButton = () => {
 buttonElement.addEventListener('mouseenter',hoverButton);
 
 
-// .filter() -
+// array creating using new keyword
+const points = new Array (4,5,6,12,3)
+console.log(points)
+
+
+// .filter() 
 const array1 = [29,-5,3,14,-3];
 
 const filteredArray1 = array1.filter(item => item > 0);
@@ -58,3 +63,59 @@ console.log(filteredArray1);
 const changedArray1 = array1.map(item => item*10) 
 console.log(changedArray1);
 
+
+// array methods
+const arr = [4,5,6,94,7,4,4,5,58,6,22,6,55,5,1]
+console.log(arr.length);
+
+const arrStringed = arr.toString(); //to convert it to string
+console.log(arrStringed);
+
+const arrJoined = arr.join(); // it can also convert to string.
+console.log(arrJoined);  
+const arrJoinedBySeparator = arr.join('*'); // you can add a 
+console.log(arrJoinedBySeparator); //separator between each elements.
+
+const arr2 = ['banana', 'apple', 'orange'];
+const arr2Pop = arr2.pop();  // to remove last elements in an array
+console.log(arr2Pop); // it'll return the value that poped out
+console.log(arr2); // now arr2 have only 2 elements 
+
+// const arr2Pushed = arr2.push('mango');
+arr2.push('mango')
+console.log(arr2);
+
+// Shifting is equivalent to popping, but working on the first  
+// element instead of the last.
+const arr3 = ['banana', 'grape', 'orange'];
+const arr3Removed = arr3.shift();
+console.log(arr3);
+
+// The unshift() method adds a new element to an array 
+// (at the beginning), and "unshifts" older elements.
+//const arr3Added = arr3.unshift('mango');
+arr3.unshift('mango');
+console.log(arr3);
+console.log(arr3[1]); // it can access elements in an array
+
+// The concat() method creates a new array by merging 
+// (concatenating) existing arrays:
+const girls = ['Lami', 'Katy'];
+const boys = ['jon','Davis'];
+const trans = ['Ani'];
+
+const childern = girls.concat(boys); //Example (Merging Two Arrays)
+console.log(childern);
+const childernAll = girls.concat(boys,trans); //Example (Merging Three Arrays)
+console.log(childernAll);
+
+const child = girls.concat('jon'); //Example (Merging Three Arrays)
+console.log(child);
+
+// Flattening an array is the process of reducing the dimensionality of an array.
+
+// The flat() method creates a new array with sub-array elements
+// concatenated to a specified depth.
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+console.log(newArr)
