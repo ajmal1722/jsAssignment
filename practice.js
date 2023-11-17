@@ -29,3 +29,22 @@ oneParam(5);
 
 const oneLineFunction = () => console.log(3 + 5);
 oneLineFunction();
+
+
+// eventListners
+
+const buttonElement = document.querySelector('.js-button');
+
+const clickButton = () => {
+console.log ('hello');
+}
+
+buttonElement.addEventListener('click',clickButton);
+
+const hoverButton = () => {
+    buttonElement.style.color = 'red';
+    console.log('hi');
+}
+buttonElement.addEventListener('mouseenter',hoverButton);
+    
+
