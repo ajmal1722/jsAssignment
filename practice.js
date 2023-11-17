@@ -46,5 +46,15 @@ const hoverButton = () => {
     console.log('hi');
 }
 buttonElement.addEventListener('mouseenter',hoverButton);
-    
+
+
+// .filter() -
+const array1 = [29,-5,3,14,-3];
+
+const filteredArray1 = array1.filter(item => item > 0);
+console.log(filteredArray1);
+
+// .map()
+const changedArray1 = array1.map(item => item*10) 
+console.log(changedArray1);
 
