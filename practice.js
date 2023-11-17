@@ -130,3 +130,17 @@ const veg = ['tomato','potato','onion','cucumber']
 const vegSliced = veg.slice(1,3);
 console.log(veg);
 console.log(vegSliced);
+
+
+// sorting of an array
+let persons = ['Jon','Ellen','Rob','Eren','Katy','Amy'];
+persons.sort();
+console.log(persons);
+persons.reverse();
+console.log(persons)
+
+let numbers = [1,6,3,7,5,9,4];
+const numbersSorted = numbers.sort((a, b) => a - b);
+console.log(numbersSorted);
+numbers.sort((a, b) => b - a);
+console.log(numbers);
