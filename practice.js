@@ -118,4 +118,15 @@ console.log(child);
 // concatenated to a specified depth.
 const myArr = [[1,2],[3,4],[5,6]];
 const newArr = myArr.flat();
-console.log(newArr)
+console.log(newArr);
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+fruits.splice(1,2);
+console.log(fruits);
+fruits.splice(1,0,'amal','jon');
+console.log(fruits);
+
+const veg = ['tomato','potato','onion','cucumber']
+const vegSliced = veg.slice(1,3);
+console.log(veg);
+console.log(vegSliced);
