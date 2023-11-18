@@ -240,3 +240,26 @@ function getCallback (arg){
 }
 
 main();
+
+
+// new element creation
+const cre = [1,2,3];
+
+function creation () {
+    cre.forEach((item) => {
+        const para = document.createElement('p');
+        para.innerHTML = 'Hello World!';
+        document.body.appendChild(para)
+    })
+}
+creation();
+
+
+function creation2 (){
+    cre.forEach((item) => {
+        const para1 = document.createElement('p');
+        para1.innerHTML = 'Good Morning';
+        document.body.appendChild(para1);
+    })
+}
+creation2();
