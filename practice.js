@@ -195,3 +195,21 @@ function z(param1, callback){
     callback(param1);
 }
 z('ajmal',myFunction);
+
+
+// this keyword
+// method -> object
+// function -> global (window,global)
+
+const any = {
+    name : 'ajmal',
+    fun : function () {
+        console.log(this);
+    }
+}
+any.fun();
+
+function globalFunction () {
+    console.log(this);
+}
+globalFunction();
