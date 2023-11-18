@@ -167,3 +167,31 @@ function myArrMin1 (){
     return Math.min(2,4,5,6,7,78,3,99); 
 }
 console.log(myArrMin1());
+
+
+// callback functions
+setTimeout(() => {
+    console.log('timer')
+}, 3000);
+
+setInterval(() => {
+    console.log('Good Morning!!');
+}, 5000);
+
+console.log('hello');
+
+function myFunction (param){
+    console.log(param)
+}
+function x(){
+    console.log('child-x')
+}
+function y() {
+    myFunction('child-y')
+}
+x();
+y();
+function z(param1, callback){
+    callback(param1);
+}
+z('ajmal',myFunction);
