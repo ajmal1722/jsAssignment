@@ -213,3 +213,30 @@ function globalFunction () {
     console.log(this);
 }
 globalFunction();
+
+// closure
+const objs = [{
+    name : 'two',
+    msg : 'I am two'
+},
+{
+    name : 'three',
+    msg : 'I am three'
+}];
+
+function main (){
+    objs.forEach((item) => {
+        const btn = document.createElement('button');
+        btn.innerHTML = item.name;
+        btn.onclick = getCallback(item.msg);
+        document.body.appendChild(btn);
+    })
+}
+
+function getCallback (arg){
+    return function (){
+        alert(arg)
+    }
+}
+
+main();
