@@ -144,3 +144,20 @@ const numbersSorted = numbers.sort((a, b) => a - b);
 console.log(numbersSorted);
 numbers.sort((a, b) => b - a);
 console.log(numbers);
+
+// math.max.apply method for highest number in an array
+function myArrayMax () {
+   return Math.max.apply(null,numbers);
+}
+console.log(myArrayMax());
+
+function myArrMin (){
+    return Math.min.apply(null,numbers);
+}
+console.log(myArrMin());
+
+// you can also write like this
+function myArrMin1 (){
+    return Math.min(2,4,5,6,7,78,3,99); 
+}
+console.log(myArrMin1());
