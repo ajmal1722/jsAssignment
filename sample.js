@@ -108,9 +108,27 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 // 9. Generate prime numbers
     function primeNumber (number){
-        
+        if (number < 2) {
+            return false;
+        }
+
+        for (let i = 2; i < number; i++){
+            if (number % i === 0) {
+                return false;
+            } 
+        } 
+        return true;
     }
-    primeNumber (5);
+    function generatePrime (limit) {
+        let primeArray = [];
+        for (let i = 2; i < limit; i++) {
+            if (primeNumber(i)){
+                primeArray.push(i);
+            }
+        }
+        console.log (primeArray)
+    }
+    generatePrime (10);
 
 
 // 10. Maximum and minimum value
