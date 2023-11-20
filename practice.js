@@ -281,3 +281,11 @@ function getArray () {
 }
 let [, pronoun] = getArray();
 console.log (pronoun);
+
+// Swapping values using destructuring
+let a = 3;
+let b = 5;
+
+[a, b] = [b, a];
+console.log(a);
+console.log(b);
