@@ -263,3 +263,21 @@ function creation2 (){
     })
 }
 creation2();
+
+
+// Destructuring
+let introduction = ['Hello', 'I', 'am', 'Ajmal'];
+let [greetings,,, name] = introduction;
+
+console.log(greetings);
+console.log(name);
+
+let [greeting, ...intro] = introduction;
+console.log(greeting);
+console.log(intro);
+
+function getArray () {
+    return ['Hello', 'I', 'am', 'Ajmal'];
+}
+let [, pronoun] = getArray();
+console.log (pronoun);
