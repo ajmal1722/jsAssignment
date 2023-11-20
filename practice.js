@@ -298,3 +298,18 @@ let {name1, country, job} = details;
 console.log(name1);
 console.log(job);
 // console.log(otehrs);
+
+
+// closure (group of lexical elements);
+function ab() {
+    let x= 10;
+    function b() {
+        let y =20;
+        function c() {
+            console.log(x+y);
+        }
+        c()
+    }
+    b()
+}
+ab()
