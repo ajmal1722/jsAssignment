@@ -126,7 +126,7 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
                 primeArray.push(i);
             }
         }
-        console.log (primeArray)
+        console.log (`9: Prime Numberes are ${primeArray}`)
     }
     generatePrime (10);
 
@@ -177,11 +177,10 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     
 
 // 13. Checking Armstrong number or not
-    // function checkArmstrong (number) {
-    //     const stringNumber = String (number).split('');
-    //     const digitsNumber = stringNumber.length;
-        
-    //     console.log (stringNumber)
+    // function checkArmstrong (num) {
+    //     const toArray = String(num).split('');
+    //     const squaredNum = toArray.toArray()
+    //     console.log(squaredNum);
     // }
     // checkArmstrong (153);
 
