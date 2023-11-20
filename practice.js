@@ -293,6 +293,8 @@ console.log(b);
 // Object destructuring
 let details = {name1 : 'ajmal' , country : 'India', job : 'Developer'};
 let {name1, country, job} = details;
+// let {name1, ...otehrs} = details;
 
 console.log(name1);
 console.log(job);
+// console.log(otehrs);
