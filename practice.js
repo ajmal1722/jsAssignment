@@ -289,3 +289,10 @@ let b = 5;
 [a, b] = [b, a];
 console.log(a);
 console.log(b);
+
+// Object destructuring
+let details = {name1 : 'ajmal' , country : 'India', job : 'Developer'};
+let {name1, country, job} = details;
+
+console.log(name1);
+console.log(job);
