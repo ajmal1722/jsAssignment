@@ -332,7 +332,7 @@ let xyz = function () {
 console.log(abc);
 function abc (bc) {
     console.log('abc');
-    bc()
+    bc();
 }
 abc (function bc (){
     console.log('bc')
@@ -340,3 +340,21 @@ abc (function bc (){
     
 
 console.log("10"+20+30);
+
+
+// calculate area of a circle using higher order functions
+const radius = [3, 1, 2, 4];
+
+const area = function (radius) {
+    return Math.PI * radius * radius;
+}
+
+const calculate = function (radius, logic) {
+    let array = [];
+    for (let i = 0; i < radius.length; i++) {
+        array.push(logic(radius[i]));
+    }
+    return array
+}
+
+console.log(calculate(radius, area));
