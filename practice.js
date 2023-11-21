@@ -323,6 +323,20 @@ function x () {
 }
 
 // function expression
-let y = function () {
-    console.log('y called');
+let xyz = function () {
+    console.log('xyz called');
 }
+
+
+// call back function
+console.log(abc);
+function abc (bc) {
+    console.log('abc');
+    bc()
+}
+abc (function bc (){
+    console.log('bc')
+}) 
+    
+
+console.log("10"+20+30);
