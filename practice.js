@@ -313,3 +313,16 @@ function ab() {
     b()
 }
 ab();
+
+
+//------------------------------------------------------------//
+
+// function statement aka function declaration
+function x () {
+    console.log('x called');
+}
+
+// function expression
+let y = function () {
+    console.log('y called');
+}
