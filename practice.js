@@ -351,6 +351,8 @@ const radius = [3, 1, 2, 4];
 
 const area = radius => Math.PI * radius * radius;
 
+const diameter = radius => radius * 2;
+
 const calculate = function (radius, logic) {
     let array = [];
     for (let i = 0; i < radius.length; i++) {
@@ -360,3 +362,4 @@ const calculate = function (radius, logic) {
 }
 
 console.log(calculate(radius, area));
+console.log(calculate(radius, diameter));
