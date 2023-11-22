@@ -381,3 +381,12 @@ console.log (tripledArray);
 
 const squaredArray = array2.map(x => x * x);
 console.log(squaredArray);
+
+// filter()
+const greaterThan3 = array2.filter(function (x) {
+    return x > 3;
+})
+console.log(greaterThan3);
+
+const greaterThan5 = array2.filter(x => x > 5);
+console.log(greaterThan5);
