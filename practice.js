@@ -425,3 +425,12 @@ function checkArmstrong (num) {
     
 }
 checkArmstrong (153);
+
+
+// Promises
+const promise = createOrder(orderId);
+
+promise.then(function (orderId) {
+    proceedToPayment(orderId)
+});
+ 
