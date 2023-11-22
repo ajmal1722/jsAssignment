@@ -405,3 +405,23 @@ const findMax = array2.reduce(function(max, curr) {
     return max;
 }, 0);
 console.log('max value is = ' + findMax);
+
+// checking armstrong number
+function checkArmstrong (num) {
+    const numToString = String(num).split('');
+    const numToArray = numToString.map(Number);
+
+    const armstrong = numToArray.reduce(function(acc, curr){
+        acc = acc + curr ** numToArray.length;
+        return acc
+    }, 0);
+
+    if (armstrong === num){
+        console.log(`13: ${num} is an Armstrong Number`);
+    }
+    else {
+        console.log(`13: ${num} is not an Armstrong`);
+    }
+    
+}
+checkArmstrong (153);

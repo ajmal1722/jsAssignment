@@ -177,12 +177,23 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     
 
 // 13. Checking Armstrong number or not
-    // function checkArmstrong (num) {
-    //     const toArray = String(num).split('');
-    //     const squaredNum = toArray.toArray()
-    //     console.log(squaredNum);
-    // }
-    // checkArmstrong (153);
+    function checkArmstrong (num) {
+        const numToString = String(num).split('');
+        const numToArray = numToString.map(Number);
+
+        const armstrong = numToArray.reduce(function(acc, curr){
+            acc = acc + curr ** numToArray.length;
+            return acc
+        }, 0);
+
+        if (armstrong === num){
+            console.log(`13: ${num} is an Armstrong Number`);
+        }
+        else {
+            console.log(`13: ${num} is not an Armstrong`);
+        }
+    }
+    checkArmstrong (153);
 
 
 // 14. Print Fibonacci series
