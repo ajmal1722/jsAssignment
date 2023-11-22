@@ -366,7 +366,7 @@ console.log(calculate(radius, diameter));
 
 // map filter reduce
 // map
-let array2 = [2,4,6,8,10]
+let array2 = [2,4,6,8,10,4,1]
 
 function doubled (x) {
     return x * 2;
@@ -390,3 +390,18 @@ console.log(greaterThan3);
 
 const greaterThan5 = array2.filter(x => x > 5);
 console.log(greaterThan5);
+
+// reduce
+const findSum = array2.reduce(function (accumulator, currentValue){
+    accumulator = accumulator + currentValue;
+    return accumulator;
+}, 0);
+console.log('sum =' + findSum);
+
+const findMax = array2.reduce(function(max, curr) {
+    if (max < curr){
+        max = curr;
+    }   
+    return max;
+}, 0);
+console.log('max value is = ' + findMax);
