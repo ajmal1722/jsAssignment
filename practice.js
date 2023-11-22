@@ -428,9 +428,22 @@ checkArmstrong (153);
 
 
 // Promises
-const promise = createOrder(orderId);
+// const promise = createOrder(orderId);
 
-promise.then(function (orderId) {
-    proceedToPayment(orderId)
-});
+// promise.then(function (orderId) {
+//     proceedToPayment(orderId)
+// });
+
+async function getData() {
+    return 'namste';
+}
+
+const dataPromise = getData();
+
+console.log(dataPromise)
+dataPromise.then(res => console.log(res));
  
+
+let amx;
+console.log(amx);
+amx= 10;
