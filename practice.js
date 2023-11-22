@@ -363,3 +363,21 @@ const calculate = function (radius, logic) {
 
 console.log(calculate(radius, area));
 console.log(calculate(radius, diameter));
+
+// map filter reduce
+// map
+let array2 = [2,4,6,8,10]
+
+function doubled (x) {
+    return x * 2;
+}
+const doubledArray =array2.map(doubled);
+console.log(doubledArray);
+
+const tripledArray = array2.map (function tripled (x){
+    return x * 3;
+})
+console.log (tripledArray);
+
+const squaredArray = array2.map(x => x * x);
+console.log(squaredArray);
