@@ -28,3 +28,18 @@ console.log(entries);
 
 // Object.create()
 const createdObj = Object.create(obj);
+
+//closure
+function x (){
+    var a = 7 ;
+    var d=30
+    function y () {
+        var b=10
+        function z (){
+            console.log (a,b)
+        }
+        z()
+    }
+    y();
+}
+x();
