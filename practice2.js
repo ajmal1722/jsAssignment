@@ -71,3 +71,8 @@ for (let elements of arr) {
 }
 
 // for...in loop for Objects
+console.log('for...in');
+
+for (let key in object) {
+    console.log(key + ' : ' + object[key]);
+}
