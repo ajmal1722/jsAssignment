@@ -54,3 +54,11 @@ function x (){
 }
 var z = x();
 z();
+
+const arr =[2,4,6,31,5] 
+
+// forEach()
+arr.forEach(function (param){
+    console.log(param)
+});
+
