@@ -104,3 +104,17 @@ letters.add(13);
 letters.add(7);
 console.log(letters);
 console.log(letters.values()) 
+
+
+// new Map() 
+const fruits = new Map([
+    ['apples', 499],
+    ['banana', 399],
+    ['orange', 200]
+])
+console.log(fruits);
+// add elements by using set() method;
+fruits.set('mango', 499);
+console.log()
+console.log(fruits.get('apples'));
+console.log(fruits.has('orange'));
