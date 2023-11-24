@@ -62,3 +62,12 @@ arr.forEach(function (param){
     console.log(param)
 });
 
+console.log('------------------------------------');
+
+// for...of for arrays
+console.log('for...of');
+for (let elements of arr) {
+    console.log(elements)
+}
+
+// for...in loop for Objects
