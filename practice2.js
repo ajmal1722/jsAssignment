@@ -71,8 +71,21 @@ for (let elements of arr) {
 }
 
 // for...in loop for Objects
-console.log('for...in');
-
 for (let key in object) {
     console.log(key + ' : ' + object[key]);
 }
+
+
+// nested destructuring
+const nestedObject = {
+    firstName : 'Emma',
+    secondName : 'Stone',
+    age : '40',
+    education : {
+        hss : 'mmvhss',
+        diploma : 'kgptc'
+    }
+}
+
+const {education : {hss, diploma}} = nestedObject;
+console.log(diploma)
