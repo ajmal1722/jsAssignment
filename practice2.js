@@ -115,6 +115,17 @@ const fruits = new Map([
 console.log(fruits);
 // add elements by using set() method;
 fruits.set('mango', 499);
-console.log()
+fruits.delete('banana')
+console.log(fruits)
 console.log(fruits.get('apples'));
 console.log(fruits.has('orange'));
+
+// Currying 
+function currying(x) {
+    return function (y) {
+        return function (z) {
+            return x + y + z;
+        }
+    }
+}
+console.log(currying(1) (2) (3));
