@@ -56,7 +56,7 @@ buttonElement.addEventListener('mouseenter',hoverButton);
 
 // array creating using new keyword
 const points = new Array (4,5,6,12,3)
-console.log(points)
+console.log(points);
 
 
 // .filter() 
@@ -70,6 +70,7 @@ const changedArray1 = array1.map(item => item*10)
 console.log(changedArray1);
 
 
+console.log('-------------------------------')
 // array methods
 const arr = [4,5,6,94,7,4,4,5,58,6,22,6,55,5,1]
 console.log(arr.length);
@@ -447,3 +448,21 @@ dataPromise.then(res => console.log(res));
 let amx;
 console.log(amx);
 amx= 10;
+
+const object3 = {
+    name : 'ajmal',
+    age : 15
+}
+
+// function print(x,y) {
+//     // console.log(x,this.age,this.name);
+//     console.log(y,x);
+// }
+// // print.call(object3,'my age is')
+
+// print(object3.name,"hello")
+
+function print (x) {
+    console.log(x, this.name);
+}
+print.apply(object3, ['hellooooo'])
