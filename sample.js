@@ -209,11 +209,22 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 
 // 15. Sum of prime numbers
-    // function primeNumberSum (number) {
-    //     for (let i = 1; i < number; i++){
-    //         if ()
-    //     }
-    // }
+    const num = 10;
+    function generatePrimeNum (limit) {
+        let primeArray = [];
+        for (let i = 2; i < limit; i++) {
+            if (primeNumber(i)){
+                primeArray.push(i);
+            }
+        }
+        return primeArray;
+    }
+    
+    function primeNumberSum (number) {
+       const sum = generatePrimeNum(number).reduce((acc, val) => acc + val)
+        console.log(`15: sum of all prime Numbers upto ${num} = ${sum}`)
+    }
+    primeNumberSum(num);
 
 
 // 16. Sum of all multiple of 5
