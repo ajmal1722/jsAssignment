@@ -248,19 +248,21 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
                 sum += i;
             }
         }
-        console.log (`4: ${sum}`);
+        console.log (`17: ${sum}`);
     }
-    sumEven (10);
+    sumEvenNumbers (10);
 
 
 // 18. Union of array of integers
-
+    
 
 
 // 19. Sm of digits of a given number
-    // function sumOfDigits (number) {
-        
-    // }
-
+    function sumOfDigits (number) {
+        const numToArray = String(number).split('').map(Number);
+        const sum = numToArray.reduce((acc, curr) => acc + curr);
+        console.log(`19: sum of digits = ${sum}`);
+    }
+    sumOfDigits(23457);
 
 // 20.
