@@ -254,7 +254,16 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
 
 
 // 18. Union of array of integers
-    
+    function union () {
+        const array1 = [1,2,3,4];
+        const array2 = [3,4,5,6,7,8]
+
+        const unionSet = new Set ([...array1,...array2]);
+        const unionArray = Array.from(unionSet);
+
+        console.log('18: ', unionArray);
+    }
+    union();
 
 
 // 19. Sm of digits of a given number
