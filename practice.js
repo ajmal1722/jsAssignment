@@ -466,3 +466,7 @@ function print (x) {
     console.log(x, this.name);
 }
 print.apply(object3, ['hellooooo'])
+
+
+
+    

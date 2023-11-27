@@ -129,3 +129,17 @@ function currying(x) {
     }
 }
 console.log(currying(1) (2) (3));
+
+
+// Error Handling using try and catch
+try {
+    throw new Error("This is a deliberate error.");
+  } catch (error) {
+    console.log('An error occurred:', error.message);
+  }
+  
+  // example for dybamic 
+  var abcd = 'ajmal'
+console.log(abcd)
+    abcd = 15;
+    console.log(abcd);
