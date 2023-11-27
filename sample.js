@@ -274,4 +274,18 @@ arrayAscending([45,5,7,5,8,9,78,36,22,13]);
     }
     sumOfDigits(23457);
 
-// 20.
+
+// 20. Count the no.of vowels in a string
+    function vowelCount (str) {
+        const string = str.toLowerCase().split('');
+        const vowels =['a', 'e','i','o','u'];
+
+        const totalVowels = string.reduce((acc, curr) => {
+            if (vowels.includes(curr)){
+                acc++
+            }
+            return acc;
+        }, 0)
+        console.log(`20: Vowel count = ${totalVowels}`);
+    }
+    vowelCount('hello world');
