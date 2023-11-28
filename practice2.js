@@ -140,6 +140,24 @@ try {
   
   // example for dybamic 
   var abcd = 'ajmal'
-console.log(abcd)
+    console.log(abcd)
     abcd = 15;
     console.log(abcd);
+
+
+// map ,filter,reduce
+  const arr1 = [2,4,20,12]
+
+  const sortedArr1 = arr1.sort((a, b) => a - b)
+  console.log(sortedArr1);
+
+  const mapArr1 = arr1.map(x => x * 2);
+  console.log(mapArr1);
+
+  const filterArr1 = arr1.filter(x => x > 2)
+  console.log(filterArr1);
+
+  const reduceArr1 = arr1.reduce((sum, val) => {
+    return sum + val
+  }, 0)
+  console.log(reduceArr1)
