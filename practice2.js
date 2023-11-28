@@ -161,3 +161,31 @@ try {
     return sum + val
   }, 0)
   console.log(reduceArr1)
+
+
+  // call, apply, bind
+
+  const person1 = {
+    firstName : 'Emma',
+    secondName : 'Stone',
+    age : '40',
+    
+};
+const fullName = function (place){
+    console.log(this.firstName + " " + this.secondName + ' from ' + place) 
+}
+
+const person2 = {
+    firstName : 'margot',
+    secondName : 'robbie',
+    age : '40',
+    
+};
+
+// call()
+fullName.call(person1, 'calicut')
+fullName.call(person2);
+
+// apply ()
+fullName.apply(person1,['Kunnam kulam'])
+
