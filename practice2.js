@@ -189,3 +189,17 @@ fullName.call(person2);
 // apply ()
 fullName.apply(person1,['Kunnam kulam'])
 
+
+// ********************************************************** //
+//  Unit review  //
+
+// Data types
+// 1. Primitive Types
+// 2. Non-primitive 
+
+// non-primitive
+
+const obj1 = { name: 'Jon'}
+const obj2 = obj1;
+obj2.name = 'Doe';
+console.log(obj1, obj2)
