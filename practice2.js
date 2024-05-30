@@ -249,3 +249,13 @@ console.log(closureVal())
 console.log(closureVal())
 console.log(closureVal())
 console.log(closureVal())
+
+// Currying
+function add (x) {
+    return function (y) {
+        return x + y
+    }
+}
+
+const addVal5 = add(5)
+console.log('add:', addVal5(3))
