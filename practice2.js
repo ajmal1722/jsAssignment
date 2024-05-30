@@ -199,7 +199,32 @@ fullName.apply(person1,['Kunnam kulam'])
 
 // non-primitive
 
-const obj1 = { name: 'Jon'}
+const obj1 = { name: 'Jon' }
 const obj2 = obj1;
 obj2.name = 'Doe';
 console.log(obj1, obj2)
+
+
+// Closure
+function outerFunction() {
+    let outerVar = 'Outer';
+    console.log('outer-1')
+
+    function middleFunction() {
+        let middleVar = 'Middle';
+        console.log('inner-2')
+
+        function innerFunction() {
+            let innerVar = 'Inner';
+            console.log(outerVar); // Accesses 'Outer'
+            console.log(middleVar); // Accesses 'Middle'
+            console.log(innerVar); // Accesses 'Inner'
+        }
+
+        innerFunction();
+    }
+
+    middleFunction();
+}
+  
+outerFunction();
