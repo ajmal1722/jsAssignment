@@ -205,7 +205,7 @@ obj2.name = 'Doe';
 console.log(obj1, obj2)
 
 
-// Closure
+// lexical scope
 function outerFunction() {
     let outerVar = 'Outer';
     console.log('outer-1')
@@ -228,3 +228,24 @@ function outerFunction() {
 }
   
 outerFunction();
+
+// closure
+function closure () {
+    let val = 1;
+    function innerFunction () {
+        // here val is getting incremented after the function is returned
+        //  so whenever the function is called the output will always be incremented.
+        // this is because of hoisting. the val will be stored even after the
+        // outer function is getting executed. so that val will be incremented after returning it
+        return val++ 
+    }
+    return innerFunction
+}
+
+const closureVal = closure()
+console.log(closureVal())
+console.log(closureVal())
+console.log(closureVal())
+console.log(closureVal())
+console.log(closureVal())
+console.log(closureVal())
