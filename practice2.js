@@ -259,3 +259,17 @@ function add (x) {
 
 const addVal5 = add(5)
 console.log('add:', addVal5(3))
+
+
+// closure in the case of var and let variables
+for (var i = 0; i < 3; i++) {
+    setTimeout(function() {
+    console.log(i);
+}, 5000);
+}
+
+for (let i = 0; i < 3; i++) {
+        setTimeout(function() {
+        console.log(i);
+    }, 5000);
+}
