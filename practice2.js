@@ -273,3 +273,13 @@ for (let i = 0; i < 3; i++) {
         console.log(i);
     }, 5000);
 }
+
+function ConstructorFunction (name, age) {
+    this.name = name
+    this.age = age
+}
+
+const ajmal = new ConstructorFunction('ajmal', 23)
+const jon = new ConstructorFunction('Jon', 45)
+console.log('ajmal:', ajmal)
+console.log('Jon:', jon)
