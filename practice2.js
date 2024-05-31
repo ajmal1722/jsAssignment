@@ -274,6 +274,8 @@ for (let i = 0; i < 3; i++) {
     }, 5000);
 }
 
+
+// Object creating using constructor
 function ConstructorFunction (name, age) {
     this.name = name
     this.age = age
@@ -283,3 +285,30 @@ const ajmal = new ConstructorFunction('ajmal', 23)
 const jon = new ConstructorFunction('Jon', 45)
 console.log('ajmal:', ajmal)
 console.log('Jon:', jon)
+
+
+// Call apply bind
+let name = {
+    firstName: 'Cristiano',
+    secondName: 'Ronaldo',
+    printFullName: function(country) {
+        console.log(this.firstName, this.secondName, 'from', country)
+    }
+}
+
+name.printFullName('Portugal')
+
+const name2 = { 
+    firstName: 'Leo',
+    secondName: 'Messi'
+}
+
+// call
+name.printFullName.call(name2, 'Argentina')
+
+// apply
+name.printFullName.apply(name2, ['Argentina'])
+
+// bind
+const bindFunction = name.printFullName.bind(name2, 'Argentina')
+bindFunction()
