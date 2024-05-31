@@ -264,12 +264,12 @@ console.log('add:', addVal5(3))
 // closure in the case of var and let variables
 for (var i = 0; i < 3; i++) {
     setTimeout(function() {
-    console.log(i);
-}, 5000);
+        console.log(i);
+    }, 5000);
 }
 
 for (let i = 0; i < 3; i++) {
-        setTimeout(function() {
+    setTimeout(function() {
         console.log(i);
     }, 5000);
 }
