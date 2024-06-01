@@ -323,15 +323,24 @@ const promise = createOrder(cart)
 console.log(promise)
 
 promise
-    .then((res) => console.log('promise success:', res))
-    .catch(err => console.log('pormise failed:', err.message))
+    .then((orderId) => {
+        console.log('promise is resolved:', orderId)
+        return orderId
+    })
+    .then(orderId => {
+        return proceedToPayment(orderId)
+    })
+    .then(paymentInfo => {
+        console.log(paymentInfo)
+    })
+    .catch(err => console.log('pormise is rejected:', err.message))
 
 function createOrder () {
 
     const pr = new Promise((resolve, reject) =>  {
         
         if (!validateCart(cart)) {
-            const err = new Error('Cart is not Empty')
+            const err = new Error('Cart is Empty')
             reject(err);
         }
 
@@ -349,4 +358,16 @@ function createOrder () {
 
 function validateCart (cart) {
     return cart.length > 0
+}
+
+function proceedToPayment(orderId) {
+    return new Promise(function(resolve, reject){
+        if (orderId) {
+            resolve('Payment is successfull')
+        }
+
+        if (!orderId) {
+            reject('Payment is not completed')
+        }
+    })
 }
