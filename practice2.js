@@ -320,9 +320,11 @@ bindFunction()
 const cart = ['shoes', 'Bag', 'Pant', 'shirt']
 
 const promise = createOrder(cart)
+console.log(promise)
 
 promise
     .then((res) => console.log('promise success:', res))
+    .catch(err => console.log('pormise failed:', err.message))
 
 function createOrder () {
 
@@ -344,5 +346,5 @@ function createOrder () {
 }
 
 function validateCart (cart) {
-    return true
+    return false
 }
