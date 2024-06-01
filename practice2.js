@@ -312,3 +312,37 @@ name.printFullName.apply(name2, ['Argentina'])
 // bind
 const bindFunction = name.printFullName.bind(name2, 'Argentina')
 bindFunction()
+
+
+
+
+// Promise Akshay Saini
+const cart = ['shoes', 'Bag', 'Pant', 'shirt']
+
+const promise = createOrder(cart)
+
+promise
+    .then((res) => console.log('promise success:', res))
+
+function createOrder () {
+
+    const pr = new Promise((resolve, reject) =>  {
+        
+        if (!validateCart(cart)) {
+            const err = new Error('Cart is not valid')
+            reject(err);
+        }
+
+        const orderId = '1234'
+        if (validateCart) {
+            resolve(orderId)
+        }
+
+    })
+
+    return pr
+}
+
+function validateCart (cart) {
+    return true
+}
