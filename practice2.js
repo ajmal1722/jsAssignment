@@ -331,7 +331,7 @@ function createOrder () {
     const pr = new Promise((resolve, reject) =>  {
         
         if (!validateCart(cart)) {
-            const err = new Error('Cart is not valid')
+            const err = new Error('Cart is not Empty')
             reject(err);
         }
 
@@ -348,5 +348,5 @@ function createOrder () {
 }
 
 function validateCart (cart) {
-    return true
+    return cart.length > 0
 }
