@@ -271,7 +271,7 @@ for (var i = 0; i < 3; i++) {
 for (let i = 0; i < 3; i++) {
     setTimeout(function() {
         console.log(i);
-    }, 5000);
+    }, 3000);
 }
 
 
@@ -337,7 +337,9 @@ function createOrder () {
 
         const orderId = '1234'
         if (validateCart) {
-            resolve(orderId)
+            setTimeout(() => {
+                resolve(orderId)
+            }, 5000)
         }
 
     })
@@ -346,5 +348,5 @@ function createOrder () {
 }
 
 function validateCart (cart) {
-    return false
+    return true
 }
