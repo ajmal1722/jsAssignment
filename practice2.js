@@ -371,3 +371,27 @@ function proceedToPayment(orderId) {
         }
     })
 }
+
+
+// simple example for promise.
+function asyncOperation () {
+    let value = true;
+    return new Promise((resolve, reject) => {
+        if (value) {
+            return resolve('Operation was successful!');
+        }
+
+        reject('promise rejected!')
+
+    })
+}
+
+const promise1 = asyncOperation();
+
+promise1
+    .then((result) => {
+        console.log('Promise resolved:', result);
+    })
+    .catch((error) => {
+        console.log('Promise rejected:', error.message);
+    });
