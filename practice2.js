@@ -395,3 +395,40 @@ promise1
     .catch((error) => {
         console.log('Promise rejected:', error.message);
     });
+
+
+
+setTimeout(() => {
+    console.log('********Array Methods**************')
+// Array Methods in JavaScript
+const fruitArray = ["Banana", "Orange", "Apple", "Mango"];
+
+// length
+console.log('Array.length:', fruitArray.length)
+
+// toString
+console.log('toString:', fruitArray.toString())
+
+// at
+console.log('array.at:', fruitArray.at(2))
+console.log('array.at:', fruitArray[1])
+
+// join
+console.log('array.join:', fruitArray.join(' '))
+
+// pop - The pop() method removes the last element from an array
+// The pop() method returns the value that was "popped out":
+console.log('array.pop:', fruitArray.pop())
+
+// shift - The shift method will remove the first element from an array
+// The shift() method returns the value that was "popped out":
+console.log('array.shift:', fruitArray.shift())
+
+// unshift - The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+fruitArray.unshift('Lemon')
+console.log('array.unshift:', fruitArray)
+// The unshift() method returns the new array length:
+console.log('array.unshift length:', fruitArray.unshift('banana'))
+
+
+}, 6000)
