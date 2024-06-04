@@ -431,4 +431,19 @@ console.log('array.unshift:', fruitArray)
 console.log('array.unshift length:', fruitArray.unshift('banana'))
 
 
+
+// Array find and search methods
+const array = ['banana', 'apple', 'mango', 'strawberry', 'orange'] 
+
+// indexOf
+console.log('IndexOf:', array.indexOf('mango'))
+
+// includes - it'll return the boolean value
+console.log('Includes:', array.includes('apple'))
+
+// find - The find() method returns the value of the first array 
+// element that passes a test function.
+const numbers = [3, 10, 4, 6, 12, 8, 5, 23, 42]
+console.log('find:', numbers.find(value => value > 9))
+
 }, 6000)
