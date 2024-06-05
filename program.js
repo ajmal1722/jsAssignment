@@ -10,15 +10,22 @@ function swapValues() {
 }
 // swapValues()
 
+// function findCount (arr) {
+//     let count = {}
+//     arr.map(item => {
+//         console.log('count:', count[item]);
+//         if (count[item]) count[item]++
+//         else{
+//             count[item] = 1;
+//         }
+//     })
+//     console.log(count)
+// }
 function findCount (arr) {
-    let count = {}
-    arr.map(item => {
-        console.log('count:', count[item]);
-        if (count[item]) count[item]++
-        else{
-            count[item] = 1;
-        }
-    })
+    let count = arr.reduce((acc, val) => {
+        acc[val] ? acc[val]++ : acc[val] = 1
+        return acc
+    }, {})
     console.log(count)
 }
 findCount(['one', 'two', 'two', 'two', 'three', 'three'])
