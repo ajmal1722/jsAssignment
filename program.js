@@ -8,4 +8,17 @@ function swapValues() {
     console.log('a:', a); // a: 'jon doe'
     console.log('b:', b); // b: 3
 }
-swapValues()
+// swapValues()
+
+function findCount (arr) {
+    let count = {}
+    arr.map(item => {
+        console.log('count:', count[item]);
+        if (count[item]) count[item]++
+        else{
+            count[item] = 1;
+        }
+    })
+    console.log(count)
+}
+findCount(['one', 'two', 'two', 'two', 'three', 'three'])
