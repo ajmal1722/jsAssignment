@@ -21,6 +21,7 @@ function swapValues() {
 //     })
 //     console.log(count)
 // }
+
 function findCount (arr) {
     let count = arr.reduce((acc, val) => {
         acc[val] ? acc[val]++ : acc[val] = 1
@@ -28,4 +29,14 @@ function findCount (arr) {
     }, {})
     console.log(count)
 }
-findCount(['one', 'two', 'two', 'two', 'three', 'three'])
+// findCount(['one', 'two', 'two', 'two', 'three', 'three'])
+
+function printNumbers (num) {
+    for(var i = 1; i < num; i++) {
+        setTimeout(() => {
+            console.log(i)
+        }, i * 1000);
+    }
+}
+
+printNumbers(4)
