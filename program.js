@@ -1,12 +1,12 @@
 function swapValues() {
     let a = 3;
-    let b = 'jon doe';
+    let b = "jon doe";
 
     // Swapping the values using array destructuring
     [a, b] = [b, a];
 
-    console.log('a:', a); // a: 'jon doe'
-    console.log('b:', b); // b: 3
+    console.log("a:", a); // a: 'jon doe'
+    console.log("b:", b); // b: 3
 }
 // swapValues()
 
@@ -22,12 +22,12 @@ function swapValues() {
 //     console.log(count)
 // }
 
-function findCount (arr) {
+function findCount(arr) {
     let count = arr.reduce((acc, val) => {
-        acc[val] ? acc[val]++ : acc[val] = 1
-        return acc
-    }, {})
-    console.log(count)
+        acc[val] ? acc[val]++ : (acc[val] = 1);
+        return acc;
+    }, {});
+    console.log(count);
 }
 // findCount(['one', 'two', 'two', 'two', 'three', 'three'])
 
@@ -39,12 +39,23 @@ function findCount (arr) {
 //     }
 // }
 
-function printNumbers (num) {
-    for(let i = 0; i <= num; i++) {
-        setTimeout(() => {
-            console.log(i)
-        }, i * 1000);
+// function printNumbers (num) {
+//     for(let i = 0; i <= num; i++) {
+//         setTimeout(() => {
+//             console.log(i)
+//         }, i * 1000);
+//     }
+// }
+
+function printNumbers(num) {
+    for (var i = 0; i <= num; i++) {
+        function x(i) {
+            setTimeout(() => {
+                console.log(i);
+            }, i * 1000);
+        }
+        x(i);
     }
 }
 
-printNumbers(4)
+printNumbers(4);
