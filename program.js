@@ -31,8 +31,16 @@ function findCount (arr) {
 }
 // findCount(['one', 'two', 'two', 'two', 'three', 'three'])
 
+// function printNumbers (num) {
+//     for(var i = 1; i < num; i++) {
+//         setTimeout(() => {
+//             console.log(i)
+//         }, i * 1000);
+//     }
+// }
+
 function printNumbers (num) {
-    for(var i = 1; i < num; i++) {
+    for(let i = 0; i <= num; i++) {
         setTimeout(() => {
             console.log(i)
         }, i * 1000);
